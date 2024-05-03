@@ -1,0 +1,190 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  font-family: "Rubik", sans-serif;
+}
+
+.cel_content {
+  width: 450px;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.cabecera {
+  background-image: url(https://scontent.fcnq1-1.fna.fbcdn.net/v/t39.30808-6/319220041_1113852425849026_5257580695398416077_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=vRlogUMjnd8Q7kNvgFSM0dR&_nc_ht=scontent.fcnq1-1.fna&oh=00_AfCCH-9lpkHi7_p4CjbJvIW8BL6FuzqmaG9v0gI1hxOwdA&oe=663B0874);
+  height: 150px;
+  background-position: center;
+  position: relative;
+}
+.cabecera .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.486);
+}
+
+.cabecera_presentacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 90px;
+}
+.cabecera_presentacion .informacion {
+  background-color: white;
+  min-height: 100px;
+  width: 82%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 45px 1px black;
+}
+.cabecera_presentacion .informacion img {
+  width: 50px;
+  height: 50px;
+  padding-right: 10px;
+}
+.cabecera_presentacion .informacion .contenido .titulo {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  color: rgb(26, 26, 26);
+  padding-bottom: 4px;
+}
+.cabecera_presentacion .informacion .contenido .descripcion {
+  font-size: 13px;
+  letter-spacing: 0.9px;
+  color: rgb(73, 73, 73);
+  margin: 0;
+  padding: 0;
+}
+.cabecera_presentacion .informacion .contenido .info_item {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.cabecera_presentacion .informacion .contenido .info_item .item {
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.cabecera_presentacion .informacion .contenido .info_item .item svg {
+  width: 13px;
+  height: 13px;
+  margin-right: 3px;
+}
+
+.catalogo {
+  padding-top: 84px;
+  display: flex;
+}
+.catalogo .categorias {
+  width: 100%;
+  margin: auto 5%;
+}
+.catalogo .categorias .categoria {
+  width: 100%;
+}
+.catalogo .categorias .categoria .categoria_cabecera {
+  margin: 10px 0;
+  width: 100%;
+  height: 155px;
+  position: relative;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  transition: 0.5s all ease-in;
+}
+.catalogo .categorias .categoria .categoria_cabecera img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.catalogo .categorias .categoria .categoria_cabecera .info_cat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.493);
+  z-index: 2;
+}
+.catalogo .categorias .categoria .categoria_cabecera .info_cat h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 23px;
+  letter-spacing: 1px;
+}
+.catalogo .categorias .categoria .productos {
+  transition: 0.7s max-height linear;
+  max-height: 0;
+  overflow: hidden;
+}
+.catalogo .categorias .categoria .productos .producto {
+  border-radius: 0.6rem;
+  overflow: hidden;
+  width: 100%;
+  margin: 5px 0;
+  display: flex;
+}
+.catalogo .categorias .categoria .productos .producto .left img {
+  width: 85px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.catalogo .categorias .categoria .productos .producto .right {
+  padding: 10px 15px;
+  width: 100%;
+  background-color: rgba(236, 236, 236, 0.753);
+  position: relative;
+}
+.catalogo .categorias .categoria .productos .producto .right p {
+  margin: 0;
+}
+.catalogo .categorias .categoria .productos .producto .right .nombre {
+  padding-top: 15px;
+  color: rgb(53, 53, 53);
+  font-size: 21px;
+  font-weight: 500;
+}
+.catalogo .categorias .categoria .productos .producto .right .precio {
+  color: rgb(224, 159, 18);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.catalogo .categorias .categoria .productos .producto .right button {
+  position: absolute;
+  background-color: rgb(224, 159, 18);
+  padding: 10px;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 600;
+  bottom: 15px;
+  right: 15px;
+  font-size: 14.5px;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./css/index.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="cel_content">
+        <div class="cabecera">
+            <div class="bg"></div>
+        </div>
+
+
+        <div class="cabecera_presentacion">
+            <div class="informacion">
+                <img src="https://storage.googleapis.com/prod-parra-argentina-assets/clients/20/profile/profile_s.webp?v=3459" alt="logo" class="logo">
+                <div class="contenido">
+                    <h1 class="titulo">La tranquera</h1>
+                    <p class="descripcion">Este es un menú de ejemplo ¡Te invitamos a que te sumes!</p>
+                    <div class="info_item">
+                        <div class="item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="16" height="16" fill="currentColor"> <g><circle cx="128" cy="104" r="32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle> <path d="M208,104c0,72-80,128-80,128S48,176,48,104a80,80,0,0,1,160,0Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></g></svg>
+                            Calle 12
+                        </div>
+                        <div class="item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="16" height="16" fill="currentColor"> <g><path d="M92.47629,124.81528a84.34782,84.34782,0,0,0,39.05334,38.8759,7.92754,7.92754,0,0,0,7.8287-.59231L164.394,146.40453a8,8,0,0,1,7.58966-.69723l46.837,20.073A7.97345,7.97345,0,0,1,223.619,174.077,48.00882,48.00882,0,0,1,176,216,136,136,0,0,1,40,80,48.00882,48.00882,0,0,1,81.923,32.381a7.97345,7.97345,0,0,1,8.29668,4.79823L110.31019,84.0571a8,8,0,0,1-.65931,7.53226L93.01449,117.00909A7.9287,7.9287,0,0,0,92.47629,124.81528Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></g></svg>
+                            3482543723
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalogo">
+            <div class="categorias" > 
+                <div class="categoria"> 
+                    <div class="categoria_cabecera" onclick="toggleCat('hamb')" id="hamb">
+                        <img src="https://img.freepik.com/vector-gratis/hamburguesa-realista-sobre-fondo-pizarra_79603-1042.jpg" alt="">
+                        <div class="info_cat">
+                            <h1>Hamburguesas</h1>
+                        </div>
+                    </div>
+
+                    <div class="productos" id="hambp">
+                        <div class="producto">
+                            <div class="left">
+                                <img src="https://argentinaburger.com/wp-content/uploads/2023/12/WM-AB-15-768x768.png" alt="">
+                            </div>
+                            <div class="right">
+                                <p class="nombre">Hamburguesa Cuarto XL</p>
+                                <p class="precio">$1500</p>
+                                <button class="seleccionar">Seleccionar</button>
+                            </div>
+                        </div>
+
+                        <div class="producto">
+                            <div class="left">
+                                <img src="https://argentinaburger.com/wp-content/uploads/2024/01/New-WM-AB-2024-01-15T201600.353.jpg" alt="">
+                            </div>
+                            <div class="right">
+                                <p class="nombre">Mega Cuarto Pampeano </p>
+                                <p class="precio">$2500</p>
+                                <button class="seleccionar">Seleccionar</button>
+                            </div>
+                        </div>
+
+                        <div class="producto">
+                            <div class="left">
+                                <img src="https://argentinaburger.com/wp-content/uploads/2024/01/New-WM-AB-2024-01-19T102322.227.jpg" alt="">
+                            </div>
+                            <div class="right">
+                                <p class="nombre">Mega BIG BANG Cheddar Triple</p>
+                                <p class="precio">$3200</p>
+                                <button class="seleccionar">Seleccionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categoria"> 
+                    <div class="categoria_cabecera" onclick="toggleCat('pizzas')" id="pizzas">
+                        <img src="https://img.freepik.com/vector-gratis/fondo-pizza-dibujada-mano_23-2150905263.jpg" alt="">
+                        <div class="info_cat">
+                            <h1>Pizzas</h1>
+                        </div>
+                    </div>
+
+                    <div class="productos" id="pizzasp">
+                        <div class="producto">
+                            <div class="left">
+                                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/7e/80/16/pizzas.jpg?w=1100&h=-1&s=1" alt="">
+                            </div>
+                            <div class="right">
+                                <p class="nombre">Pizza Romana</p>
+                                <p class="precio">$22500</p>
+                                <button class="seleccionar">Seleccionar</button>
+                            </div>
+                        </div>
+
+                        <div class="producto">
+                            <div class="left">
+                                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/b5/ba/f4/caption.jpg?w=1100&h=-1&s=1" alt="">
+                            </div>
+                            <div class="right">
+                                <p class="nombre">Pizza Mapuche alemana</p>
+                                <p class="precio">$42500</p>
+                                <button class="seleccionar">Seleccionar</button>
+                            </div>
+                        </div>
+
+                        <div class="producto">
+                            <div class="left">
+                                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/5a/55/f4/caption.jpg?w=1100&h=-1&s=1" alt="">
+                            </div>
+                            <div class="right">
+                                <p class="nombre">Pizza Picante</p>
+                                <p class="precio">$9500</p>
+                                <button class="seleccionar">Seleccionar</button>
+                            </div>
+                        </div>
+
+                        <div class="producto">
+                            <div class="left">
+                                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/98/67/ce/caption.jpg?w=1000&h=-1&s=1" alt="">
+                            </div>
+                            <div class="right">
+                                <p class="nombre">Pizza Full Cheese</p>
+                                <p class="precio">$15500</p>
+                                <button class="seleccionar">Seleccionar</button>
+                            </div>
+                        </div>
+
+                        <div class="producto">
+                            <div class="left">
+                                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/49/7b/06/caption.jpg?w=1100&h=-1&s=1" alt="">
+                            </div>
+                            <div class="right">
+                                <p class="nombre">Pizza normal</p>
+                                <p class="precio">$4200</p>
+                                <button class="seleccionar">Seleccionar</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="categoria"> 
+                    <div class="categoria_cabecera" onclick="toggleCat('bebida')" id="bebida">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/536/858/489/cerveza-vaso-wallpaper-preview.jpg" alt="">
+                        <div class="info_cat">
+                            <h1>Bebidas</h1>
+                        </div>
+                    </div>
+
+                    <div class="productos" id="bebidap">
+                        <div class="producto">
+                            <div class="left">
+                                <img src="https://pizzeriacarpaneto.com/wp-content/uploads/2020/07/cocacola-600x600.jpg" alt="">
+                            </div>
+                            <div class="right">
+                                <p class="nombre">Coca-cola 250ml</p>
+                                <p class="precio">$3500</p>
+                                <button class="seleccionar">Seleccionar</button>
+                            </div>
+                        </div>
+
+                        <div class="producto">
+                            <div class="left">
+                                <img src="https://pizzeriacarpaneto.com/wp-content/uploads/2020/07/cocazero-600x600.jpg" alt="">
+                            </div>
+                            <div class="right">
+                                <p class="nombre">Coca-cola Zero 250ml</p>
+                                <p class="precio">$3550</p>
+                                <button class="seleccionar">Seleccionar</button>
+                            </div>
+                        </div>
+
+                        <div class="producto">
+                            <div class="left">
+                                <img src="https://pizzeriacarpaneto.com/wp-content/uploads/2020/07/bebsanpel1.jpg" alt="">
+                            </div>
+                            <div class="right">
+                                <p class="nombre">San Pellegrino</p>
+                                <p class="precio">$3550</p>
+                                <button class="seleccionar">Seleccionar</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+ 
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let timer;
+        function toggleCat(id){
+            const el = document.getElementById(id);
+            const elp = document.getElementById(id+'p');
+            if ( el.style.height === '75px' ) {
+                el.style.height = null;
+                elp.style.maxHeight = null;
+            }
+            else {
+                el.style.height = "75px";
+                elp.style.maxHeight = "5200px";
+            }
+        }
+    </script>
+</body>
+</html>
