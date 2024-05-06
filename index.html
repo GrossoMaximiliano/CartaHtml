@@ -18,7 +18,6 @@
             <div class="bg"></div>
         </div>
 
-
         <div class="cabecera_presentacion">
             <div class="informacion">
                 <img src="https://storage.googleapis.com/prod-parra-argentina-assets/clients/20/profile/profile_s.webp?v=3459" alt="logo" class="logo">
@@ -50,7 +49,7 @@
                     </div>
 
                     <div class="productos" id="hambp">
-                        <div class="producto">
+                        <div class="producto" onclick="gotoproduct()">
                             <div class="left">
                                 <img src="https://argentinaburger.com/wp-content/uploads/2023/12/WM-AB-15-768x768.png" alt="">
                             </div>
@@ -61,7 +60,7 @@
                             </div>
                         </div>
 
-                        <div class="producto">
+                        <div class="producto" onclick="gotoproduct()">
                             <div class="left">
                                 <img src="https://argentinaburger.com/wp-content/uploads/2024/01/New-WM-AB-2024-01-15T201600.353.jpg" alt="">
                             </div>
@@ -72,7 +71,7 @@
                             </div>
                         </div>
 
-                        <div class="producto">
+                        <div class="producto" onclick="gotoproduct()">
                             <div class="left">
                                 <img src="https://argentinaburger.com/wp-content/uploads/2024/01/New-WM-AB-2024-01-19T102322.227.jpg" alt="">
                             </div>
@@ -94,7 +93,7 @@
                     </div>
 
                     <div class="productos" id="pizzasp">
-                        <div class="producto">
+                        <div class="producto" onclick="gotoproduct()">
                             <div class="left">
                                 <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/7e/80/16/pizzas.jpg?w=1100&h=-1&s=1" alt="">
                             </div>
@@ -105,7 +104,7 @@
                             </div>
                         </div>
 
-                        <div class="producto">
+                        <div class="producto" onclick="gotoproduct()">
                             <div class="left">
                                 <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/b5/ba/f4/caption.jpg?w=1100&h=-1&s=1" alt="">
                             </div>
@@ -116,7 +115,7 @@
                             </div>
                         </div>
 
-                        <div class="producto">
+                        <div class="producto" onclick="gotoproduct()">
                             <div class="left">
                                 <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/5a/55/f4/caption.jpg?w=1100&h=-1&s=1" alt="">
                             </div>
@@ -127,7 +126,7 @@
                             </div>
                         </div>
 
-                        <div class="producto">
+                        <div class="producto" onclick="gotoproduct()">
                             <div class="left">
                                 <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/98/67/ce/caption.jpg?w=1000&h=-1&s=1" alt="">
                             </div>
@@ -138,7 +137,7 @@
                             </div>
                         </div>
 
-                        <div class="producto">
+                        <div class="producto" onclick="gotoproduct()">
                             <div class="left">
                                 <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/49/7b/06/caption.jpg?w=1100&h=-1&s=1" alt="">
                             </div>
@@ -161,7 +160,7 @@
                     </div>
 
                     <div class="productos" id="bebidap">
-                        <div class="producto">
+                        <div class="producto" onclick="gotoproduct()">
                             <div class="left">
                                 <img src="https://pizzeriacarpaneto.com/wp-content/uploads/2020/07/cocacola-600x600.jpg" alt="">
                             </div>
@@ -172,7 +171,7 @@
                             </div>
                         </div>
 
-                        <div class="producto">
+                        <div class="producto" onclick="gotoproduct()">
                             <div class="left">
                                 <img src="https://pizzeriacarpaneto.com/wp-content/uploads/2020/07/cocazero-600x600.jpg" alt="">
                             </div>
@@ -183,7 +182,7 @@
                             </div>
                         </div>
 
-                        <div class="producto">
+                        <div class="producto" onclick="gotoproduct()">
                             <div class="left">
                                 <img src="https://pizzeriacarpaneto.com/wp-content/uploads/2020/07/bebsanpel1.jpg" alt="">
                             </div>
@@ -201,6 +200,11 @@
             </div>
         </div>
 
+        <a class="carrito_check" href="./pedido.html">
+            <span class="cantidad">3 PLATOS SELECCIONADOS</span>
+            <p>COMPLETAR PEDIDO</p>
+        </a>
+
     </div>
 
     <script>
@@ -216,6 +220,10 @@
                 el.style.height = "75px";
                 elp.style.maxHeight = "5200px";
             }
+        }
+
+        function gotoproduct(){
+            window.location.href = "./producto.html"
         }
     </script>
 </body>
